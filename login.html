@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Netflix Landing Page Clone</title>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css'><link rel="stylesheet" href="./style.css">
+<style type="text/css">
+	hybrid-login-form .login-form {
+    margin-bottom: 0;
+}
+.login-form {
+    margin-bottom: 10px;
+}
+.login-body {
+    color: #333;
+}
+.hybrid-login-form .login-input {
+    padding-bottom: 16px;
+}
+.hybrid-login-form .nfInput {
+    max-width: 130%;
+}
+.login-input {
+    padding-bottom: 24px;
+}
+.nfInput {
+    max-width: 500px;
+    position: relative;
+}
+.login-body {
+    color: #333;
+}
+.hybrid-login-form .nfEmailPhoneControls {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 0;
+}
+.nfEmailPhoneControls {
+    position: relative;
+}
+   
+.hybrid-login-form .nfEmailPhoneControls .nfTextField {
+    background: #333;
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-image: none;
+        background-size: auto;
+}
+.hybrid-login-form .nfTextField {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 0;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    padding: 16px 20px 0;
+}
+.nfInput .nfTextField {
+    height: 48px;
+    padding: 10px 10px 0;
+    width: 100%;
+}
+.nfTextField:invalid, .nfTextField:valid {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.nfTextField {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: solid 1px #8c8c8c;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    display: block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    color: #000000;
+    padding: 10px 11px;
+    height: 44px;
+}
+input {
+    line-height: normal;
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+        font-size: inherit;
+        line-height: inherit;
+    margin: 0;
+}
+
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+.hybrid-login-form .login-remember-me input[type="checkbox"] + label {
+    padding: 0;
+}
+.ui-binary-input input[type="checkbox"] + label, .ui-binary-input input[type="radio"] + label {
+    color: #333;
+    position: relative;
+    display: block;
+    line-height: 1.2;
+    padding: 6px 0;
+}
+.hybrid-login-form .hybrid-login-form-help {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+.hybrid-login-form .nfPasswordHasToggle .nfPasswordControls .nfPasswordToggle {
+    display: block;
+}
+.hybrid-login-form .nfPasswordControls .nfPasswordToggle {
+    height: 50px;
+    padding: 0 12px;
+    display: none;
+}
+.nfPasswordHasToggle .nfPasswordControls .nfTextField, .nfPasswordHasToggle .nfPasswordControls .nfPasswordToggle {
+    border: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    height: 46px;
+}
+.nfPasswordToggle {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #8c8c8c;
+    font-size: 14px;
+    border: 0;
+    background: transparent;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -moz-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.hybrid-login-form .nfEmailPhoneInError .nfEmailPhoneControls::after, .hybrid-login-form .nfPasswordInError .nfPasswordControls::after {
+    border-bottom: 2px solid #E87C03;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    border-bottom-right-radius: 4px;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 6px;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+}
+
+
+.hybrid-login-form .login-button {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin: 24px 0 12px;
+}
+	
+.login-button.btn {
+    padding: 16px;
+    font-size: 18px;
+}
+.login-button.btn {
+    width: 13	0%;
+    background: #E50914;
+}
+.btn.btn-small {
+    display: inline-block;
+    font-size: 18px;
+    padding: 12px 2em;
+    min-width: 98px;
+    min-height: 37px;
+    margin-right: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 1em;
+}
+.btn.btn-small {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: .5em auto;
+    line-height: 50px;
+}
+.btn {
+    position: relative;
+    padding: 24.5px 2em;
+    min-width: 74px;
+    min-height: 50px;
+    margin: .5em .5em .5em 0;
+}
+.btn-blue, .btn-submit, .action-button {
+    color: #fff;
+    background-color: #0080ff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#0080ff), to(#0277ec));
+    background-image: -webkit-linear-gradient(top, #0080ff, #0277ec);
+    background-image: -moz- oldlinear-gradient(top, #0080ff, #0277ec);
+    background-image: -o-linear-gradient(top, #0080ff, #0277ec);
+    background-image: linear-gradient(to bottom, #0080ff, #0277ec);
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.55);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.55);
+}
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1em;
+    vertical-align: middle;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: .1px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 0;
+    position: relative;
+    color: #fff;
+    background-color: #e6e6e6;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e6e6e6), to(#dddddd));
+    background-image: -webkit-linear-gradient(top, #e6e6e6, #dddddd);
+    background-image: -moz- oldlinear-gradient(top, #e6e6e6, #dddddd);
+    background-image: -o-linear-gradient(top, #e6e6e6, #dddddd);
+    background-image: linear-gradient(to bottom, #e6e6e6, #dddddd);
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.login-content h1 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 28px;
+    margin: 0 0 35px 0;
+}
+
+.hybrid-login-form {
+    background-color: rgba(0, 0, 0, 0.75);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: 0px;
+    min-height: 515px;
+    padding: 20px 30px 20px;
+    width: auto;
+}
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header class="showcase">
+			<div class="showcase-top">
+				<img src="img/logo.png" alt="" />
+			</div>
+			<div class="login-content">
+
+				<div class="hybrid-login-form">
+				<h1>Sign In</h1>
+				<form action="" class="login-form" method="post">
+	<div class="nfInput nfEmailPhoneInput login-input login-input-email" data-uia="login-field+container">
+		<div class="nfInputPlacement">
+			<div class="nfEmailPhoneControls">
+				<label class="input_id"><input autocomplete="off" class="nfTextField" data-uia="login-field" dir="" id="id_userLoginId" name="userLoginId" style="background: #333; color: #d0cece" placeholder="Email or phone number" tabindex="0" type="text" value=""></label>
+				<div class="ui-select-wrapper country-select" data-uia="phone-country-selector+container">
+					<a class="ui-select-wrapper-link" data-uia="phone-country-selector+target" href="#">
+					<div class="ui-select-current">
+						<span class="country-select-flag nf-flag nf-flag-ng"></span>
+					</div></a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="nfInput nfPasswordInput login-input login-input-password" data-uia="password-field+container">
+		<div class="nfInputPlacement">
+			<div class="nfPasswordControls">
+				<label class="input_id"><input autocomplete="off" class="nfTextField" data-uia="password-field" dir="" id="id_password" name="password" style="background: #333; color: #d0cece" placeholder="Password" tabindex="0" type="password" value=""></label><button class="nfPasswordToggle" data-uia="password-visibility-toggle" id="id_password_toggle" title="Show Password" type="button">SHOW</button>
+			</div>
+		</div>
+	</div><button class="btn login-button btn-submit btn-small" data-uia="login-submit-button" tabindex="0" type="submit">Sign In</button>
+	<div class="hybrid-login-form-help">
+		<div class="ui-binary-input login-remember-me">
+			<input checked class="" data-uia="rememberMe" id="bxid_rememberMe_true" name="rememberMe" tabindex="0" type="checkbox" value="true"><label data-uia="label+rememberMe" for="bxid_rememberMe_true"><span class="login-remember-me-label-text">Remember me</span></label>
+			<div class="helper"></div>
+
+		</div><a class="login-help-link" data-uia="login-help-link" href="/LoginHelp">Need help?</a>
+	</div><input name="flow" type="hidden" value="websiteSignUp"><input name="mode" type="hidden" value="login"><input name="action" type="hidden" value="loginAction"><input name="withFields" type="hidden" value="rememberMe,nextPage,userLoginId,password,countryCode,countryIsoCode,recaptchaResponseToken,recaptchaError,recaptchaResponseTime"><input name="authURL" type="hidden" value="1590151466309./TMB4QjlMsRHalC1KUS3UTQeve4="><input name="nextPage" type="hidden" value=""><input name="showPassword" type="hidden" value=""><input name="countryCode" type="hidden" value="+234"><input name="countryIsoCode" type="hidden" value="NG">
+</form>
+</div>
+			</div>
+		</header>
+
+
+
+
+		<footer class="footer">
+			<p>Questions? Call 1-866-579-7172</p>
+			<div class="footer-cols">
+				<ul>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Investor Relations</a></li>
+					<li><a href="#">Ways To Watch</a></li>
+					<li><a href="#">Corporate Information</a></li>
+					<li><a href="#">Netflix Originals</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Help Center</a></li>
+					<li><a href="#">Jobs</a></li>
+					<li><a href="#">Terms Of Use</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Account</a></li>
+					<li><a href="#">Redeem Gift Cards</a></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Speed Test</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Media Center</a></li>
+					<li><a href="#">Buy Gift Cards</a></li>
+					<li><a href="#">Cookie Preferences</a></li>
+					<li><a href="#">Legal Notices</a></li>
+				</ul>
+			</div>
+
+		</footer>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
